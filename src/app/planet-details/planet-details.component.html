@@ -1,0 +1,15 @@
+<div>
+  <button routerLink="/" type="button">Home</button>
+  <h2>{{ planet.planetName }}</h2>
+  <img [src]="planet.image" alt="" />
+  <p>{{ planet.planetName }} has a radius of {{ planet.planetRadiusKM }} km</p>
+  <p>
+    {{ planet.planetName }} is {{ planet.distInMillionsKM.fromEarth }} million
+    kilometres from the Earth
+  </p>
+  <p>{{ planet.planetName }} is {{ planet.planetColor }} in color</p>
+  <p>
+    {{ planet.planetName }} is {{ planet.distInMillionsKM.fromSun }} million
+    kilometres from the Sun
+  </p>
+</div>

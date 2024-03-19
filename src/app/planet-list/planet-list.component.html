@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    @for (planet of planets; track planet.planetName) {
+    <li>
+      <button
+        routerLink="/planet"
+        [state]="planet"
+        (click)="displayPlanet(planet)"
+      >
+        {{ planet.planetName }}
+      </button>
+    </li>
+    } @empty {
+    <li>There are no planets.</li>
+    }
+  </ul>
+</div>
